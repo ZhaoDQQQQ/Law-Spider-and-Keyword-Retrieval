@@ -12,8 +12,8 @@ class Producer:
     def __init__(self):
         # URL地址前半部分   选择页数
         self.start_url = "https://flk.npc.gov.cn/api/?page="
-        # URL地址后半部分   选择页数
-        self.end_url = "&type=dfxfg&searchType=title%3Baccurate&sortTr=f_bbrq_s%3Bdesc&gbrqStart=&gbrqEnd=&" \
+        # URL地址后半部分   选择页数  # 为  屏蔽的部分  F12查一下就好
+        self.end_url = "&######################################Tr=f_bbrq_s%3Bdesc&gbrqStart=&gbrqEnd=&" \
                        "sxrqStart=&sxrqEnd=&sort=true&size=10"
         # 请求URL得到的信息  一页（10个）的相关法律文件的阅览地址
         self.data = []
